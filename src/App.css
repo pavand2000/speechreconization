@@ -1,38 +1,75 @@
+/* style.css */
+
+/* Global styles for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Set your background color */
+}
+
+/* Container for the entire app */
 .App {
   text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8; /* Lighter background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Main title style */
+h2 {
+  font-size: 28px;
+  margin: 20px 0;
+  color: #007bff; /* Set your header text color */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Main description style */
+p {
+  font-size: 18px;
+  color: #333; /* Set your text color */
+  margin: 10px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Container for the transcribed text */
+.main-content {
+  background-color: #fff; /* Set your background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+/* Button styles */
+.button-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between; /* Arrange buttons side by side */
+  margin-top: 20px; /* Add space between buttons and content */
 }
 
-.App-link {
-  color: #61dafb;
+.button {
+  background-color: #4a90e2; /* Lighter button background color */
+  color: #fff; /* Set your button text color */
+  border: none;
+  padding: 15px 30px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button:hover {
+  background-color: #357abd; /* Set the hover background color */
+}
+
+/* Styling for the "Copied" message */
+.copied-message {
+  color: green; /* Set your copied message color */
+  font-weight: bold;
+  margin-top: 10px;
+  display: none; /* Initially hide the message */
 }
